@@ -98,9 +98,12 @@ function App() {
             <ul className="space-y-[2px]">
               {directoryData.finance.map(item => (
                 <li key={item}>
-                  <a href="#" className="group flex items-center justify-between py-[3px] text-[13px] hover:text-[#757575] transition-colors duration-200">
+                  <a
+                    href="#"
+                    className="group flex items-center justify-between py-[3px] text-[13px] hover:underline hover:text-[#757575] transition-colors duration-200"
+                  >
                     <span>{item}</span>
-                    <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"/>
+                    <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                   </a>
                 </li>
               ))}
@@ -112,9 +115,12 @@ function App() {
             <ul className="space-y-[2px]">
               {directoryData.telecom.map(item => (
                 <li key={item}>
-                  <a href="#" className="group flex items-center justify-between py-[3px] text-[13px] hover:text-[#757575] transition-colors duration-200">
+                  <a
+                    href="#"
+                    className="group flex items-center justify-between py-[3px] text-[13px] hover:underline hover:text-[#757575] transition-colors duration-200"
+                  >
                     <span>{item}</span>
-                    <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"/>
+                    <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                   </a>
                 </li>
               ))}
@@ -131,9 +137,12 @@ function App() {
                     <ul className="space-y-[2px]">
                       {(subItems as string[]).map(item => (
                         <li key={item}>
-                          <a href="#" className="group flex items-center justify-between py-[3px] text-[13px] hover:text-[#757575] transition-colors duration-200">
+                          <a
+                            href="#"
+                            className="group flex items-center justify-between py-[3px] text-[13px] hover:underline hover:text-[#757575] transition-colors duration-200"
+                          >
                             <span>{item}</span>
-                            <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"/>
+                            <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                           </a>
                         </li>
                       ))}
@@ -144,9 +153,12 @@ function App() {
                 <ul className="space-y-[2px]">
                   {(items as string[]).map(item => (
                     <li key={item}>
-                      <a href="#" className="group flex items-center justify-between py-[3px] text-[13px] hover:text-[#757575] transition-colors duration-200">
+                      <a
+                        href="#"
+                        className="group flex items-center justify-between py-[3px] text-[13px] hover:underline hover:text-[#757575] transition-colors duration-200"
+                      >
                         <span>{item}</span>
-                        <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"/>
+                        <ChevronRight className="w-[14px] h-[14px] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                       </a>
                     </li>
                   ))}
