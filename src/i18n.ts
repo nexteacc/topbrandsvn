@@ -21,7 +21,7 @@ i18n
       ja: { translation: ja },
       'zh-TW': { translation: zhTW },   
     },
-    lng: 'vi', 
+    lng: 'en', 
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false
