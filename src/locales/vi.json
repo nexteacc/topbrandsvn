@@ -1,0 +1,15 @@
+{
+  "category": {
+    "finance": "Tài chính",
+    "telecom": "Viễn thông",
+    "shopping": "Mua sắm",
+    "supermarket": "Siêu thị",
+    "mall": "Trung tâm thương mại",
+    "mobile_retail": "Cửa hàng điện thoại",
+    "convenience_store": "Cửa hàng tiện lợi",
+    "fashion": "Thời trang",
+    "female_fashion": "Thời trang nữ",
+    "male_fashion": "Thời trang nam"
+  },
+  "yourtitle": "Danh mục thương hiệu Việt Nam"
+}

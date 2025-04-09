@@ -1,0 +1,15 @@
+{
+    "category": {
+      "finance": "Finance",
+      "telecom": "Telecom",
+      "shopping": "Shopping",
+      "supermarket": "Supermarket",
+      "mall": "Shopping Mall",
+      "mobile_retail": "Mobile Retail",
+      "convenience_store": "Convenience Store",
+      "fashion": "Fashion",
+      "female_fashion": "Women Fashion",
+      "male_fashion": "Men Fashion"
+    },
+    "yourtitle": "Vietnam Brand Directory"
+}

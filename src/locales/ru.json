@@ -1,0 +1,15 @@
+{
+  "category": {
+    "finance": "Финансы",
+    "telecom": "Телекоммуникации",
+    "shopping": "Покупки",
+    "supermarket": "Супермаркет",
+    "mall": "Торговый центр",
+    "mobile_retail": "Магазин мобильных",
+    "convenience_store": "Минимаркет",
+    "fashion": "Мода",
+    "female_fashion": "Женская мода",
+    "male_fashion": "Мужская мода"
+  },
+  "yourtitle": "Вьетнамский каталог брендов"
+}

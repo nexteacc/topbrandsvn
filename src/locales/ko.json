@@ -1,0 +1,15 @@
+{
+  "category": {
+    "finance": "금융",
+    "telecom": "통신",
+    "shopping": "쇼핑",
+    "supermarket": "슈퍼마켓",
+    "mall": "쇼핑몰",
+    "mobile_retail": "휴대폰 판매점",
+    "convenience_store": "편의점",
+    "fashion": "패션",
+    "female_fashion": "여성 패션",
+    "male_fashion": "남성 패션"
+  },
+  "yourtitle": "베트남 브랜드 디렉토리"
+}
