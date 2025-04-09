@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
+import { Analytics } from "@vercel/analytics/react"; 
 
 function App() {
   const { t } = useTranslation();
@@ -173,6 +174,7 @@ function App() {
           <p className="text-[11px] text-center">© 2025 TopBrandsVN</p>
         </div>
       </footer>
+      <Analytics /> 
     </div>
   );
 }
