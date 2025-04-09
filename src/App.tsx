@@ -7,6 +7,10 @@ import { Analytics } from "@vercel/analytics/react";
 function App() {
   const { t } = useTranslation();
 
+  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(event.target.value);
+  };
+
   const directoryData = {
     finance: [
       'ACB',
@@ -81,15 +85,15 @@ function App() {
       <header className="border-b border-[#222222] py-6">
         <div className="container mx-auto px-6 flex justify-between items-center">
           <h1 className="text-[22px] font-light tracking-[-0.01em]">{t('yourtitle')}</h1>
-          <div className="space-x-2">
-            <button onClick={() => i18n.changeLanguage('en')}>English</button>
-            <button onClick={() => i18n.changeLanguage('zh')}>简</button>
-            <button onClick={() => i18n.changeLanguage('zh-TW')}>繁</button>
-            <button onClick={() => i18n.changeLanguage('ko')}>한국어</button>
-            <button onClick={() => i18n.changeLanguage('vi')}>Tiếng Việt</button>
-            <button onClick={() => i18n.changeLanguage('ru')}>Русский</button>
-            <button onClick={() => i18n.changeLanguage('ja')}>日本語</button>
-          </div>
+          <select onChange={handleLanguageChange} className="border rounded px-2 py-1">
+            <option value="en">English</option>
+            <option value="zh">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+            <option value="ko">한국어</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="ru">Русский</option>
+            <option value="ja">日本語</option>
+          </select>
         </div>
       </header>
       <main className="container mx-auto px-6 py-12">
