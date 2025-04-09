@@ -3,81 +3,13 @@ import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
 import { Analytics } from "@vercel/analytics/react"; 
+import directoryData from './data/directoryData';
 
 function App() {
   const { t } = useTranslation();
 
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     i18n.changeLanguage(event.target.value);
-  };
-
-  const directoryData = {
-    finance: [
-      'ACB',
-      'Agribank',
-      'BIDV',
-      'MB',
-      'Sacombank',
-      'Techcombank',
-      'VIB',
-      'Vietcombank',
-      'VietinBank'
-    ],
-    telecom: [
-      'MobiFone',
-      'Vietnamobile',
-      'Viettel Group',
-      'Vinaphone'
-    ],
-    shopping: {
-      supermarket: [
-        'Bach Hoa Xanh',
-        'Big C',
-        'Co.opmart',
-        'Emart',
-        'Lotte Mart',
-        'MM Mega Market',
-        'WinMart'
-      ],
-      mall: [
-        'AEON Mall',
-        'Big C',
-        'Co.opMart',
-        'Lotte Mart',
-        'Trang Tien Plaza',
-        'Vincom Center'
-      ],
-      mobile_retail: [
-        'CellphoneS',
-        'Điện Máy XANH',
-        'FPT Shop',
-        'The Gioi Di Dong (Thế Giới Di Động)',
-        'Viettel Store'
-      ],
-      convenience_store: [
-        'Circle K',
-        'Co.op Food',
-        'FamilyMart',
-        'GS25',
-        'MiniStop',
-        'VinMart+'
-      ],
-      fashion: {
-        female_fashion: [
-          'Chic-Land',
-          'ELISE',
-          'Ivy Moda',
-          'JUNO',
-          'Nem Fashion',
-          'Seven AM'
-        ],
-        male_fashion: [
-          'Coolmate',
-          'LỰU ĐẠN',
-          'Viet Tien'
-        ]
-      }
-    }
   };
 
   return (
@@ -138,7 +70,11 @@ function App() {
               {typeof items === 'object' && !Array.isArray(items) ? (
                 Object.entries(items).map(([subCategory, subItems]) => (
                   <div key={subCategory}>
-                    <h3 className="text-[16px] font-medium mb-4">{t(`category.${subCategory}`)}</h3>
+                    <h3 className="text-[16px] font-medium mb-4">
+                      {category === 'restaurant_chains'
+                        ? t(`category.restaurant_subcategories.${subCategory}`)
+                        : t(`category.${subCategory}`)}
+                    </h3>
                     <ul className="space-y-[2px]">
                       {(subItems as string[]).map(item => (
                         <li key={item}>

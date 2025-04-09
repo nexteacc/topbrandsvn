@@ -9,7 +9,15 @@
     "convenience_store": "コンビニ",
     "fashion": "ファッション",
     "female_fashion": "女性ファッション",
-    "male_fashion": "男性ファッション"
+    "male_fashion": "男性ファッション",
+    "restaurant_chains": "レストランチェーン",
+    "restaurant_subcategories": {
+      "fast_food_chains": "ファーストフードチェーン",
+      "pizza_chains": "ピザチェーン",
+      "other_restaurants": "その他のレストラン"
+    },
+    "delivery_platforms": "デリバリープラットフォーム",
+    "coffee_chains": "コーヒーチェーン"
   },
   "yourtitle": "ベトナムブランドディレクトリ"
 }

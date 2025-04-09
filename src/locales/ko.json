@@ -9,7 +9,15 @@
     "convenience_store": "편의점",
     "fashion": "패션",
     "female_fashion": "여성 패션",
-    "male_fashion": "남성 패션"
+    "male_fashion": "남성 패션",
+    "restaurant_chains": "레스토랑 체인",
+    "restaurant_subcategories": {
+      "fast_food_chains": "패스트푸드 체인",
+      "pizza_chains": "피자 체인",
+      "other_restaurants": "기타 레스토랑"
+    },
+    "delivery_platforms": "배달 플랫폼",
+    "coffee_chains": "커피 체인"
   },
   "yourtitle": "베트남 브랜드 디렉토리"
 }

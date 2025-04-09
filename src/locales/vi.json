@@ -9,7 +9,15 @@
     "convenience_store": "Cửa hàng tiện lợi",
     "fashion": "Thời trang",
     "female_fashion": "Thời trang nữ",
-    "male_fashion": "Thời trang nam"
+    "male_fashion": "Thời trang nam",
+    "restaurant_chains": "Chuỗi nhà hàng",
+    "restaurant_subcategories": {
+      "fast_food_chains": "Chuỗi đồ ăn nhanh",
+      "pizza_chains": "Chuỗi bánh pizza",
+      "other_restaurants": "Các nhà hàng khác"
+    },
+    "delivery_platforms": "Nền tảng giao đồ ăn",
+    "coffee_chains": "Chuỗi cà phê"
   },
   "yourtitle": "Danh mục thương hiệu Việt Nam"
 }

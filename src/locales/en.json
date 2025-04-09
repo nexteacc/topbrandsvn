@@ -9,7 +9,15 @@
       "convenience_store": "Convenience Store",
       "fashion": "Fashion",
       "female_fashion": "Women Fashion",
-      "male_fashion": "Men Fashion"
+      "male_fashion": "Men Fashion",
+      "restaurant_chains": "Restaurant Chains",
+      "restaurant_subcategories": {
+        "fast_food_chains": "Fast Food Chains",
+        "pizza_chains": "Pizza Chains",
+        "other_restaurants": "Other Restaurants"
+      },
+      "delivery_platforms": "Delivery Platforms",
+      "coffee_chains": "Coffee Chains"
     },
     "yourtitle": "Vietnam Brand Directory"
 }
