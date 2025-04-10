@@ -38,7 +38,7 @@ const directoryData = {
       'CellphoneS',
       'Điện Máy XANH',
       'FPT Shop',
-      'The Gioi Di Dong (Thế Giới Di Động)',
+      'Thế Giới Di Động',
       'Viettel Store'
     ],
     convenience_store: [
@@ -94,7 +94,7 @@ const directoryData = {
       'BAEMIN',
       'Go Food',
       'GrabFood',
-      'Now.vn / ShopeeFood'
+      'ShopeeFood'
     ],
     coffee_chains: [
       'Cong Ca Phe',

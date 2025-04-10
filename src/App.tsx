@@ -16,7 +16,10 @@ function App() {
     <div className="min-h-screen bg-white text-[#222222]">
       <header className="border-b border-[#222222] py-6">
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <h1 className="text-[22px] font-light tracking-[-0.01em]">{t('yourtitle')}</h1>
+          <div>
+            <h1 className="text-[22px] font-light tracking-[-0.01em]">{t('yourtitle')}</h1>
+            <p className="text-[12px] text-[#555] mt-1">A-Z</p>
+          </div>
           <select onChange={handleLanguageChange} className="border rounded px-2 py-1">
             <option value="en">English</option>
             <option value="zh">简体中文</option>
