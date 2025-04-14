@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Moon, Sun } from 'lucide-react';
+import { ChevronRight, ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
 import { Analytics } from "@vercel/analytics/react"; 
@@ -8,9 +8,7 @@ import directoryData from './data/directoryData';
 function App() {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
   const [darkMode, setDarkMode] = useState(false);
-
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -78,21 +76,38 @@ function App() {
       </header>
       <main className="container mx-auto px-6 py-12">
         
-        <div className="mb-16">
 
-          <div className="max-w-4xl mx-auto"> {/* 添加最大宽度和居中容器 */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> {/* 修改网格布局 */}
-              {mainCategories.map(category => (
-                <div 
-                  key={category.id}
-                  onClick={() => handleCardClick(category.id)}
-                  className={`relative overflow-hidden rounded-lg h-32 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-105 ${category.gradient} ${selectedCategory === category.id ? 'ring-2 ring-blue-500' : ''}`}
-                >
-                  <span className={`text-xl font-medium ${category.id === 'fashion' ? 'text-black' : 'text-white'}`}>
-                    {t(`category.${category.id}`)}
-                  </span>
-                </div>
-              ))}
+        {selectedCategory && (
+          <button 
+            onClick={() => setSelectedCategory(null)}
+            className="flex items-center mb-6 text-[#222222] dark:text-gray-300 hover:text-[#757575] dark:hover:text-gray-100 transition-colors duration-200"
+          >
+            <ArrowLeft className="w-4 h-4 mr-1" />
+            <span>{t('back') || '返回'}</span>
+          </button>
+        )}
+        
+        <div className="mb-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {mainCategories.map(category => {
+   
+                if (selectedCategory && selectedCategory !== category.id) {
+                  return null;
+                }
+                
+                return (
+                  <div 
+                    key={category.id}
+                    onClick={() => handleCardClick(category.id)}
+                    className={`relative overflow-hidden rounded-lg h-32 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-105 ${category.gradient} ${selectedCategory === category.id ? 'ring-2 ring-blue-500' : ''}`}
+                  >
+                    <span className={`text-xl font-medium ${category.id === 'fashion' ? 'text-black' : 'text-white'}`}>
+                      {t(`category.${category.id}`)}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
