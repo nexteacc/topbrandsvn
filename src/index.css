@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 将container类重命名为theme-switch-container，避免与Tailwind冲突 */
+
 .theme-switch-container {
   margin: 0;
   padding: 0;
-  position: relative; /* 添加相对定位 */
-  z-index: 10; /* 确保开关在其他元素上方 */
+  position: relative; 
+  z-index: 10; 
 }
 
 .label {
@@ -15,7 +15,7 @@
   width: 60px;
   background-color: #ffffff;
   border-radius: 15px;
-  /* 减小阴影范围，避免影响布局 */
+ 
   -webkit-box-shadow: inset 0 0 3px 2px rgba(255, 255, 255, 1),
     inset 0 0 10px 1px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.05),
     inset 0 0 0 2px rgba(0, 0, 0, 0.2);
