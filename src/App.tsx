@@ -94,7 +94,8 @@ function App() {
         <link rel="alternate" href="https://www.topbrandsvn.org/vi" hreflang="vi" />
         <link rel="alternate" href="https://www.topbrandsvn.org/ja" hreflang="ja" />
         <link rel="alternate" href="https://www.topbrandsvn.org/ko" hreflang="ko" />
-        <link rel="alternate" href="https://www.topbrandsvn.org/ru" hreflang="ru" /
+        <link rel="alternate" href="https://www.topbrandsvn.org/ru" hreflang="ru" />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-703Z96SWLE"></script>
         <script
           dangerouslySetInnerHTML={{
