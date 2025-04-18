@@ -94,17 +94,18 @@ function App() {
         <link rel="alternate" href="https://www.topbrandsvn.org/vi" hreflang="vi" />
         <link rel="alternate" href="https://www.topbrandsvn.org/ja" hreflang="ja" />
         <link rel="alternate" href="https://www.topbrandsvn.org/ko" hreflang="ko" />
-        <link rel="alternate" href="https://www.topbrandsvn.org/ru" hreflang="ru" />
-
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-703Z96SWLE`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-703Z96SWLE');
-          `}
-        </script>
+        <link rel="alternate" href="https://www.topbrandsvn.org/ru" hreflang="ru" /
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-703Z96SWLE"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-703Z96SWLE');
+            `,
+          }}
+        />
       </Helmet>
       <div className="min-h-screen bg-white dark:bg-gray-900 text-[#222222] dark:text-gray-100">
         <header className="border-b border-[#222222] dark:border-gray-700 py-6">
